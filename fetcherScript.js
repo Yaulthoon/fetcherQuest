@@ -74,10 +74,10 @@ function events(xml, scene, number) {
 }
 
 function gEvent () {
-var eventBoard = document.getElementById("eventboard");
-document.getElementById("gameboard").style.visibility = "hidden";
-eventBoard.style.visibility = "visible";
-document.getElementById('roll').style.visibility = 'hidden';
+        var eventBoard = document.getElementById("eventboard");
+        document.getElementById("gameboard").style.visibility = "hidden";
+        eventBoard.style.visibility = "visible";
+        document.getElementById('roll').style.visibility = 'hidden';
 }
 
 function gGame () {
