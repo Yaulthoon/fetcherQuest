@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<shops>
+
+<store>
+
+<storeName>
+New Beginnings
+</storeName>
+<owner>
+Farnsworth
+</owner>
+
+<product>
+<id>Camping supplies</id>
+<price>50</price>
+<description>
+Heals 5 HP.  Chance for night-time encounter.
+</description>
+</product>
+
+<product>
+<id>Cypress stick</id>
+<price>100</price>
+<description>
+Attack + 5.  Fit for a fledgling hero.
+</description>
+</product>
+
+<product>
+<id>Bronze sword</id>
+<price>200</price>
+<description>
+Attack + 10.  Standard issue of the local militia.
+</description>
+</product>
+
+</store>
+</shops>

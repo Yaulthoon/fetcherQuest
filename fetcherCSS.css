@@ -1,0 +1,201 @@
+aside {
+	height: 30vw;
+	width: 20vw;
+	position: absolute;
+	top: 20vw;
+	left: 15vw;
+	border:  3px solid #664d00;
+	border-right: 0px;
+	border-top: 0px;
+	box-sizing: border-box;
+	padding: 0% 1% 0% 1%;
+	background: linear-gradient(#fff3cc, #ffe699);
+	color: #663300;
+	overflow: auto;
+	
+}
+
+#characterSheet {
+	height: 20vw;
+	width: 20vw;
+	position: absolute;
+	top: 0vw;
+	left: 15vw;
+	border: 3px solid #664d00;
+	border-right: 0px;
+	border-bottom: 0px;
+	box-sizing: border-box;
+	background: linear-gradient(#ffe699, #fff3cc);
+	padding: 0% 1% 0% 1%;
+	color: #663300;
+	overflow: auto;
+}
+
+#characterSheet p {
+	font-family: Arial, "Times New Roman";
+	font-size: 12pt;
+}
+	
+
+#gameboard {
+	width: 50vw;
+	height: 50vw;
+	position: absolute;
+	top: 0vw;
+	left: 35vw;
+	border: 3px solid #664d00;
+	box-sizing: border-box;
+	visibility: visible;
+}
+
+#eventboard {
+	height: 50vw;
+	width: 50vw;
+	position: absolute;
+	top: 0vw;
+	left: 35vw;
+	padding: 7px;
+	border: 3px solid #664d00;
+	box-sizing: border-box;
+	visibility: hidden;
+	overflow: auto;
+	background: url('characterSheet.png') bottom / 30vw, 
+	linear-gradient(#ffe699, #fff3cc, #ffe699);
+	background-repeat: no-repeat;
+	font-weight: bold;
+}
+
+table {
+	border-left: 1.5px solid #664d00;
+	border-right: 1.5px solid #664d00;
+	margin: auto;
+	width: 100%;
+}
+
+#shop th {
+	border-bottom: 1.5px solid #664d00;
+	border-top: 1.5px solid #664d00;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #664d00;
+}
+
+#shop td {
+	border-bottom: 1.5px solid #664d00;
+	padding: 10px 20px 10px 20px;
+	font-size: 12pt;
+}
+
+button {
+	background: #663500;
+	height: auto;
+	width: auto;
+	padding: 10px 20px 10px 20px;
+	box-sizing: border-box;
+	margin: 0px;
+	color: white;
+	text-decoration: underline;
+	border: 1px solid #664d00;
+	box-shadow: 0px 3px 3px 0px #331a00;
+	cursor: pointer;
+}
+
+button:hover {
+	transition-duration: 1s;
+	background-color: #331a00;
+}
+
+#eventboard button {
+	position: relative;
+	left: 40%;
+	margin: 0px;
+}
+
+#piecesAvatar {
+	height: 4%;
+	width: 4%;
+	float: left;
+	box-sizing: border-box;
+	background-color:  red;
+	background:  url("piecesAvatar.png");
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 1.5px solid #664d00;
+}
+
+#piecesGrass {
+	height: 4%;
+	width: 4%;
+	float: left;
+	box-sizing: border-box;
+	background-color:  #059749;
+}
+
+#piecesWater {
+	height: 4%;
+	width: 4%;
+	float: left;
+	box-sizing: border-box;
+	background-color:  #3366ff;
+}
+
+#gameboard .piecesPath {
+	height: 4%;
+	width: 4%;
+	float: left;
+	box-sizing: border-box;
+	background:  url("pathway.png");
+	background-color: #664d00;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#piecesAltPath {
+	height: 4%;
+	width: 4%;
+	float: left;
+	box-sizing: border-box;
+	background:  url("pathway.png");
+	background-color: #664d00;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#piecesGround {
+	height: 4%;
+	width: 4%;
+	float: left;
+	box-sizing: border-box;
+	background-color:  #664d00;
+}
+
+#piecesTree {
+	height: 4%;
+	width: 4%;
+	float: left;
+	box-sizing: border-box;
+	background:  url("piecesTree.png");
+	background-size: 100%;
+	background-color: green;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+#piecesTown {
+	height: 4%;
+	width: 4%;
+	float: left;
+	box-sizing: border-box;
+	margin-bottom: -10px;
+	background: url("town.png");
+	background-color: white;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+	
+	
