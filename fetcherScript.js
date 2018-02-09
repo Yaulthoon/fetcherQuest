@@ -18,7 +18,7 @@ const user = {};
 user.level = 1;
 user.currentHp = 10;
 user.maxHp = 10;
-user.gold = 100;
+user.gold = 300;
 user.position = -1;
 user.characterSheet = 
 document.getElementById("characterSheet").querySelectorAll("p");
@@ -42,16 +42,43 @@ user.movement = function () {
 	pathway[user.position].style.backgroundRepeat = "no-repeat";
 	pathway[user.position].style.backgroundPosition = "center";
 };
+//Begin construction of user inventory
+user.inventory = {};
+user.inventory.campingSupplies = {
+	price: 50,
+	quantity: 0
+};
+user.inventory.cypressStick = {
+	price: 100,
+	quantity: 0
+};
+user.inventory.bronzeSword = {
+	price: 200,
+	quantity: 0
+};
+user.inventory.travelersTunic = {
+	price: 100,
+	quantity: 0
+};
+
+//End construction of user inventory
 
 window.onload = function() {
-	loadEvents(events, 'introduction.xml', 'scene', 0);
 	gEvent();
+	loadEvents(events, 'introduction.xml', 'scene', 0);
+	insertButton('Continue', 'tutorial', "");
 }
 
-function returnButton () {
-var eventBoard = document.getElementById('eventboard');
-	eventBoard.innerHTML += "</br></br>" + 
-	"<button onclick = 'gGame()'><u>Continue</u></button>";
+function makeButton (message, onclickFunction, parameters) {
+	var eventBoard = document.getElementById('eventboard');
+	eventBoard.innerHTML +=
+	"<button onclick = '" + onclickFunction + "(" + parameters +
+	")'>" + 
+	message + "</button>";
+}
+
+function insertButton (message, onclickFunction) {
+setTimeout(function () {makeButton(message, onclickFunction);}, 1)
 }
 
 function loadEvents(cFunction, file, scene, number) {
@@ -70,14 +97,13 @@ function events(xml, scene, number) {
 	var x = xmlDoc.getElementsByTagName(scene)[number].innerHTML;
 	document.getElementById("eventboard").innerHTML = x;
 	console.log(x);
-	returnButton();
 }
 
 function gEvent () {
-        var eventBoard = document.getElementById("eventboard");
-        document.getElementById("gameboard").style.visibility = "hidden";
-        eventBoard.style.visibility = "visible";
-        document.getElementById('roll').style.visibility = 'hidden';
+var eventBoard = document.getElementById("eventboard");
+document.getElementById("gameboard").style.visibility = "hidden";
+eventBoard.style.visibility = "visible";
+document.getElementById('roll').style.visibility = 'hidden';
 }
 
 function gGame () {
@@ -87,3 +113,5 @@ function gGame () {
 	document.getElementById("gameboard").style.visibility = "visible";
 	document.getElementById('roll').style.visibility = "visible";
 }
+
+console.log(user.inventory);
