@@ -66,10 +66,11 @@ aside {
 }
 
 table {
-	border-left: 1.5px solid #664d00;
 	border-right: 1.5px solid #664d00;
+	border-left: 1.5px solid #664d00;
 	margin: auto;
 	width: 100%;
+	height: auto;
 }
 
 #shop th {
@@ -86,6 +87,15 @@ table {
 	font-size: 12pt;
 }
 
+select {
+	margin-top: 25px;
+	height: 2vw;
+	width: 15vw;
+	padding-left: 10px;
+	background-color: #664d00;
+	color: #FFFFFF;
+}
+
 button {
 	background: #663500;
 	height: auto;
@@ -93,11 +103,13 @@ button {
 	padding: 10px 20px 10px 20px;
 	box-sizing: border-box;
 	margin: 0px;
+	margin-bottom: 20px;
 	color: white;
 	text-decoration: underline;
 	border: 1px solid #664d00;
 	box-shadow: 0px 3px 3px 0px #331a00;
 	cursor: pointer;
+	display: block;
 }
 
 button:hover {
@@ -109,6 +121,7 @@ button:hover {
 	position: relative;
 	left: 40%;
 	margin: 0px;
+	margin-bottom: 20px;
 }
 
 #piecesAvatar {
