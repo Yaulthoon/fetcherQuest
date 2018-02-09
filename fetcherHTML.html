@@ -7,25 +7,31 @@
 <meta name = "author" content = "Brandon">
 <link rel = "stylesheet" type = "text/css" href = "fetcherCSS.css">
 
+
 </head>
 
 <body>
 
 <div id = "characterSheet">
 <h3><u>Lupin Fetcher</u></h3>
-<p>Character Level: </p>
-<p>Hp: </p>
-<p>Gold: </p>
+<p id = "userLevel"></p>
+<p id = "userHp"></p>
+<p id = "userGold"></p>
+<button id = 'roll' onclick = "user.movement()">Roll</button>
 </div>
 <aside id = "textBox">
 <h3><u>Inventory</u></h3>
-<button id = 'roll' onclick = "user.movement()">Roll</button></br></br>
-<button onclick = "gEvent()">Trigger Event Board</button></br></br>
+<p id = 'campingSupplies'><strong>Camping Supplies:</strong> 0</p>
+<p id = 'cypressStick'><strong>Cypress Stick:</strong> 0</p>
+<p id = 'bronzeSword'><strong>Bronze Sword:</strong> 0</p>
+<p id = 'travelersTunic'><strong>Traveler's Tunic:</strong> 0</p>
+<button onclick = "addToCart('campingSupplies', 50)" value = "Camping Supplies">Cart
+</button>
+<button onclick = "gEvent()">Trigger Event Board</button>
 <button onclick = "gGame()">Return Board</button>
-<button onclick = "openShop(stockShop)">Open Shop</button>
+<button onclick = "openShop(stockShop, shopAvalon)">Open Shop</button>
 </aside>
 <div id = "eventboard">
-<button onclick = "gGame()">Continue</button>
 </div>
 <div id = "gameboard">
 
