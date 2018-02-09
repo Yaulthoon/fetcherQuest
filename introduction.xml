@@ -1,4 +1,4 @@
-<?xml version='1.0'?>
+<?xml version='1.0' encoding="UTF-8"?>
 <story>
 
 <!--Scene #0 Introduction-->
@@ -19,4 +19,19 @@ his client.  This is the beginning build of the game and content is
 subject to change.  Have fun and feel free to leave feedback as the game 
 progresses.
 </scene>
+<!--Scene #1 Shopping Explanation-->
+<scene>
+Before setting out on the journey, it is important to stock up on supplies.  
+You can purchase from the list of items available in each town.  This starting 
+town of Beginner's Folly is a starting point for various adventuring guilds, 
+so many of its supplies cater to novice adventurers.  While the initial trek is 
+pretty safe, I would recommend purchasing some camping supplies at the very least.
+</scene>
+<!--Scene #2 Leaving Town-->
+<scene>
+Alright, I am almost ready to set out on the journey.  Being used to the fetcher 
+lifestyle, I know of the many perils and pitfalls of the traveler, but speaking 
+with the various merchants and adventurers inside the local tavern before I depart
+ could save me some trouble in my travels down the road.
+ </scene>
 </story>
